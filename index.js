@@ -15,7 +15,8 @@ app.use( bodyParser.urlencoded() );
 //Base de datos
 dbConnection();
 
-app.use('/api/usuarios', require('./routes/usuarios.routes'))
+app.use('/api/usuarios', require('./routes/usuarios.routes'));
+app.use('/api/login', require('./routes/login.routes'));
 
 // RUTAS
 app.get( '/', (req, res) => {
