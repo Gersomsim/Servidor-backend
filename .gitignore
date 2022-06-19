@@ -34,6 +34,9 @@ yarn-error.log
 /libpeerconnection.log
 testem.log
 /typings
+/uploads/usuarios
+/uploads/medicos
+/uploads/hospitales
 .env
 
 # System files

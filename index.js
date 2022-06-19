@@ -16,8 +16,11 @@ app.use( bodyParser.urlencoded() );
 dbConnection();
 
 app.use('/api/usuarios', require('./routes/usuarios.routes'));
+app.use('/api/hospitales', require('./routes/hospitales.routes'));
+app.use('/api/medicos', require('./routes/medicos.routes'));
 app.use('/api/login', require('./routes/login.routes'));
-
+app.use('/api/todo', require('./routes/busquedas.routes'));
+app.use('/api/uploads', require('./routes/uploads.routes'));
 // RUTAS
 app.get( '/', (req, res) => {
   res.json( {
